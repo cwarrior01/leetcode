@@ -5,7 +5,7 @@ int target = 4;
 int result = search(arr,target);
         System.out.println(result);
     }
-static int search(int arr[],int target ){
+static int search(int arr [],int target ){
          int start = 0;
           int end = 1;
          while (target > arr[end]){
@@ -24,7 +24,7 @@ return binary(arr ,target ,start,end);
             if (target < arr[mid]) {
                 end = mid - 1;
 
-            } else if (target > arr[mid]) {
+            } else if (target > arr [mid]) {
                 start = mid + 1;
             } else {
                 return mid;

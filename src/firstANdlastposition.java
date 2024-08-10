@@ -1,14 +1,14 @@
 public class firstANdlastposition {
     public static void main(String[] args) {
-int arr [] = { 1,2,2,3,3,4,5,6,7,8,9,9,9};
+int []arr = { 1,2,2,3,3,4,5,6,7,8,9,9,9};
 int targe = 3 ;
 int []result = search1(arr, targe);
         System.out.println(result[0]);
         System.out.println( result[1]);
     }
-    static int []search1(int[] arr, int target ){
+    static int [] search1(int[] arr, int target ){
 
-        int[] ans = {-1, -1};
+        int [] ans = {-1, -1};
         int start = search( arr, target , true);
         int end = search(arr,target , false);
         ans [0]=start;
