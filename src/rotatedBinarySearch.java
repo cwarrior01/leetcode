@@ -1,7 +1,7 @@
 public class rotatedBinarySearch {
 
     public static void main(String[] args) {
-        int[] arr = {4, 5, 6, 7, 0, 1, 2};
+        int[] arr = {4, 5, 6, 7, 0, 1, 2,3};
         int target = 0; // Set the target value
         int ans = search(arr, target); // Call the search method
         System.out.println("Index of target " + target + ": " + ans); // Print the result
