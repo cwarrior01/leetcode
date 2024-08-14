@@ -7,7 +7,7 @@ public class rotatedBinarySearch {
         System.out.println("Index of target " + target + ": " + ans); // Print the result
     }
 
-    static int search(int nums[], int target) {
+    static int search(int []nums, int target) {
         int pivot = findPivot(nums);
         if (pivot == -1) {
             return binarySearch(nums, target, 0, nums.length - 1);
@@ -21,7 +21,7 @@ public class rotatedBinarySearch {
         return binarySearch(nums, target, pivot + 1, nums.length - 1);
     }
 
-    static int findPivot(int arr[]) {
+    static int findPivot(int []arr) {
         int start = 0;
         int end = arr.length - 1;
 
