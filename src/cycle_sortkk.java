@@ -19,9 +19,11 @@ if(arr[i] != arr[check] ){
 }
 }
 static void swap (int []arr, int first,int second ){
-        int temp = arr[first];
-    arr[first] = arr[second];
-         arr[second] = temp;
-
+//        int temp = arr[first];
+//    arr[first] = arr[second];
+//         arr[second] = temp;
+    int temp = arr[second];
+    arr[second] = arr[first];
+    arr[first] = temp;
 }
 }
