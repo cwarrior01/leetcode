@@ -18,9 +18,9 @@ public class finding_multiple_element_cycle_sort_on_index {
             }
         }
     List <Integer> ans = new ArrayList<>();
-        for (int j = 0 ; j<arr.length ;i++){
+        for (int j = 0 ; j<arr.length ;j++){
             if ( arr[j]!= j+ 1){
-ans.add(j+1);
+               ans.add(j+1);
             }
         }
 
